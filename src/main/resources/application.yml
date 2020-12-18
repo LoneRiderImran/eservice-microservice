@@ -1,0 +1,18 @@
+spring:
+        data:
+              mongodb:
+                       uri: mongodb://localhost:27017/EService_DB
+                       
+        application:
+                     name : eservice
+                
+server:
+        port : 8080
+        servlet:
+          context-path: /service
+        
+logging:
+        level:
+            ROOT: ERROR
+            org.springframework: DEBUG
+            com.whoofy.eservice: INFO
